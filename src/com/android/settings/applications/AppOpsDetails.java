@@ -145,7 +145,7 @@ public class AppOpsDetails extends InstrumentedFragment {
              * certainly cause system-wide problems
              */
             if (isPlatformSigned && tpl != AppOpsState.SU_TEMPLATE) {
-                 continue;
+                 //continue;
             }
             List<AppOpsState.AppOpEntry> entries = mState.buildState(tpl,
                     mPackageInfo.applicationInfo.uid, mPackageInfo.packageName);
